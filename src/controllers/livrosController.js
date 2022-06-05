@@ -29,7 +29,7 @@ const livrosController = {
 
         const livro = await Livro.findOne({where: { id: idLivro }});
         
-        Object.assign(payload, livro);
+        Object.assign(livro, payload);
 
         await livro.save()
 
