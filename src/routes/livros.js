@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.get('/', livrosController.index);
 router.put('/:idLivro', livrosController.update);
-router.put('/:idLivro', livrosController.update);
+router.post('/', livrosController.create);
 
 module.exports = router;
