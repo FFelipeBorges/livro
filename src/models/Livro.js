@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: 'livros',
-      timestamp: false, //n vamos trabalhar com "criado em" e "atualizado em"
+      timestamps: false, //n vamos trabalhar com "criado em" e "atualizado em"
     }
   );
 
