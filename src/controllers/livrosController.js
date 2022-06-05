@@ -21,7 +21,7 @@ const livrosController = {
 
         //**Outra atualiza os paramentros que foram modificados */
 
-        const livroAtualizado = await Livro.findOne({where: { id: idLivro }});
+        const livro = await Livro.findOne({where: { id: idLivro }});
         
         Object.assign(payload, livro);
 
